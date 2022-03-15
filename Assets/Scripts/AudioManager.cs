@@ -13,12 +13,19 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(cancion[cancionActual]);
     }
 
     void Update()
     {
         
     }
+
+    public void AvCancion()
+    {
+        cancionActual++;
+    }
+ 
 
 
 }
